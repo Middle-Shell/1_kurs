@@ -8,3 +8,4 @@ def even():
   print('Total:', k)
 
 even()
+#series9 но через функцию

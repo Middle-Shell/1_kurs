@@ -8,3 +8,4 @@ def uneven():
 	print(k)
 	
 uneven()
+#series21 но через функцию

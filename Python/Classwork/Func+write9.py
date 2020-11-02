@@ -11,3 +11,4 @@ def even():
     f.write('Total: ' + str(k))
     f.close()
 even()
+#write9 но с получением данных из файла и вывод в файл
