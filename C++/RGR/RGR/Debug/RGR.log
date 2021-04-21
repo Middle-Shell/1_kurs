@@ -1,0 +1,4 @@
+﻿  RGR.cpp
+C:\Users\79101\source\repos\RGR\RGR\RGR.cpp(71,22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\79101\source\repos\RGR\RGR\RGR.cpp(79,21): warning C4018: <: несоответствие типов со знаком и без знака
+  RGR.vcxproj -> C:\Users\79101\source\repos\RGR\Debug\RGR.exe
