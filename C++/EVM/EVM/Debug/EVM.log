@@ -1,0 +1,5 @@
+﻿  EVM.cpp
+C:\Users\79101\source\repos\EVM\EVM\EVM.cpp(10,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\79101\source\repos\EVM\EVM\EVM.cpp(22,17): warning C4101: d1: неиспользованная локальная переменная
+C:\Users\79101\source\repos\EVM\EVM\EVM.cpp(22,21): warning C4101: d2: неиспользованная локальная переменная
+  EVM.vcxproj -> C:\Users\79101\source\repos\EVM\Debug\EVM.exe
