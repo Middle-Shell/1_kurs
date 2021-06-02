@@ -26,8 +26,8 @@ public:
 		{
 			swap(ch2, ch1);
 		}
-		num11 = to_ninefold(ch1);
-		num22 = to_ninefold(ch2);
+		num11 = ch1;
+		num22 = ch2;
 	}
 	
 	string plus(int first, int second)
@@ -35,7 +35,7 @@ public:
 		int temp, sum;
 		ans = 1;
 		temp =  0;
-		while (first)
+		while (first || temp)
 		{
 			ans *= 10;
 			sum = first % 10 + second % 10 + temp;
@@ -53,7 +53,7 @@ public:
 			first /= 10;
 			second /= 10;
 		}
-		return to_string(to_tenfold(reverse(ans)));
+		return to_string(reverse(ans));
 	}
 	string minus(int first, int second)
 	{
@@ -61,12 +61,12 @@ public:
 		bool nonary = false; //занят ли "десяток" в следующей цифре
 		bool temp = false; //занято ли "десяток" в текущей цифре
 
-		while (first > 0)
+		while (first)
 		{
 			if (nonary)
 				temp = true;
 
-			if ((first % 10) - (second % 10) <= 0)
+			if ((first % 10) - (second % 10) < 0)
 			{
 				nonary = true;
 				ans = ans * 10 + ((nonary * 9 - temp) + (first % 10) - (second % 10));
@@ -82,7 +82,7 @@ public:
 			second /= 10;
 
 		}
-		return to_string(to_tenfold(reverse(ans)));
+		return to_string(reverse(ans));
 	}
 
 private:
@@ -125,7 +125,7 @@ private:
 	bool intSigned(const string& s)
 	{
 		for (int i = 0; i < s.length(); i++) {
-			if (s[i] >= 'a' && s[i] <= 'z')
+			if ((s[i] >= 'a' && s[i] <= 'z' )|| s[i] == '9')
 			{
 				cout << "Не верный формат исходных данных" << endl;
 				return false;
